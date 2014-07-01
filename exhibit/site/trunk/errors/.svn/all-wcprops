@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/!svn/ver/1896/site/trunk/errors
+END
+notfound.html
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/1896/site/trunk/errors/notfound.html
+END
+forbidden.html
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/1896/site/trunk/errors/forbidden.html
+END
+unavailable.html
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/1896/site/trunk/errors/unavailable.html
+END

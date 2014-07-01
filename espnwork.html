@@ -1,0 +1,127 @@
+ <html>
+ <head>
+    <title>ESPN work
+	 </title>
+  
+    <link rel='stylesheet' href='./exhibit/site/live/styles/common.css' type='text/css' />
+  
+    <link href="partners.js" type="application/json" rel="exhibit/data" />
+  
+    <script src="./exhibit/2.2.0/exhibit-api.js"
+            type="text/javascript"></script>
+    <script src="./exhibit/2.2.0/extensions/time/time-extension.js" type="text/javascript"></script>
+    
+    <script src="./exhibit/extensions-2.0/map/map-extension.js?gmapkey=ABQIAAAAF9XmZVHa7NWRbY4chP2znRRJxOj4SzGF5qFpzNTgYd00i3wvHRTma0NcvCvyy8DVK5mB6CkVk8_2Wg"
+           type="text/javascript"></script>
+
+    <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+
+    <script src="./boxnet.js?gmapkey=dk8jjyn5snz1135e48z8o9jrgr5utml1"
+    		type="text/javascript"></script>
+    		
+      <style>
+        .exhibit-facet-body { background: #fff; }
+        #subject-colors { display: none; }
+        a { color: #555555; }
+
+       body {
+           margin: .25in;
+       }
+       div.name {
+           font-weight: bold;
+           font-size:   120%;
+       }
+       .category-tags-business-topic {
+       }
+       .published-date {
+           font-style:  italic;
+       }
+       .team {
+           color:  #888;
+       }
+       .media-type {
+       }
+       table.filelist {
+            border:     1px solid #BCB79E;
+            background: #F0FFF0;
+            padding:    1em;
+            margin:     0.5em;
+            text-align: left;
+            width: "100%";
+       }
+
+    </style>
+ </head> 
+ <body>
+ 				<p>  For a PPT overview of the overall methodology and framework, go <a href="https://www.dropbox.com/s/xs4901kmuaxkdyg/Strategy%20and%20Partnerships%20-%20Notes.pptx?dl=1"> here</a>. To see very brief bullets on all focus companies, go <a href="https://www.dropbox.com/s/xgmrkfjsp5c0ode/Very%20Briefv3.docx?dl=1"> here</a>. This library is made up of proposed/on-going Projects, Company briefs, and Strategy summaries.</p>
+	 <div class="g-plusone" data-size="tall" ... ></div>
+
+     <table width="100%" cellpadding="10" cellspacing="0" ><tr valign="top">
+        <td width="25%" style="background: #FBF7D6">
+            <ul id="path">
+      			<li><span>Technology Strategy</span></li>
+    		</ul>
+        	<div ex:role="facet" ex:facetClass="TextSearch" ex:facetLabel="Search"></div>
+		 	<div ex:role="facet" ex:expression=".category-tags-asset-type" ex:facetLabel="Asset Type"></div>
+ 			<div ex:role="facet" ex:expression=".category-tags-tech-strategy" ex:facetLabel="Strategy Components"></div>
+ 			<div ex:role="facet" ex:expression=".category-tags-company" ex:facetLabel="Companies"></div>
+			<div ex:role="facet" ex:expression=".team" ex:facetLabel="Team"></div>
+			<div ex:role="facet" ex:expression=".status" ex:facetLabel="Status"></div>
+        </td>
+        
+                       <td ex:role="viewPanel">
+                            <div ex:role="lens" class="item" style="display: none;">
+                                <table cellspacing="5">
+                                    <tr>
+                                        <td style="position: relative">
+											<div class="itemThumbnail-blocker"></div>
+											<img ex:src-content=".doc-image-url" />
+											<div ex:if-exists=".team" class="team"> 
+                                            	<p ex:content=".team"></p>
+               								</div>
+											<div ex:if-exists=".status" class="status"> 
+                                            	<p ex:content=".status"></p>
+               								</div>
+										</td>
+                                        <td>
+                                            <b><span ex:content=".label" /></b>
+                                            <div ex:if-exists=".description" class="description"> 
+                                            	<p ex:content=".description"></p>
+               								</div>
+                                            <a ex:href-content=".doc-url">Download file</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div role="view" 
+                                ex:viewClass="Thumbnail"
+                                ex:showAll="true"
+                                ex:possibleOrders=".label, .team, .media-type, .published-date">
+                          
+                                <table ex:role="lens" class="filelist" style="display: none;">
+                                    <tr>
+ 
+ 												<td><img ex:src-content=".doc-image-url" /></td>
+           										<td>
+               										<div class="itemThumbnail-caption"><span ex:content="value" /></div>
+													<div ex:content=".published-date" class="date"></div>
+               										<div> 
+               											<a ex:href-content=".doc-url">Download file</a>
+               										</div>
+													<div ex:if-exists=".model" class="model"> 
+														<a ex:href-content=".model">Download model</a>
+													</div>
+               										<div ex:content=".category-tags-asset-type" class="category-tags-asset-type"></div>
+           										</td>							
+                                    </tr>
+                                </table>
+                            </div>
+                    	</td>
+
+        
+
+
+        
+    </tr></table>
+ </body>
+ </html>
